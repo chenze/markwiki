@@ -1,4 +1,4 @@
 ## Installation
-npm install
-mkdir data
-node app.js
+1. npm install
+2. mkdir data
+3. node app.js
