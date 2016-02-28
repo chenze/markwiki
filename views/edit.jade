@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    a(href="#{path}") Back
+    <hr />
+    <form action="#{path}" method="POST">
+    textarea(name="contents") #{contents}
+    <input type="submit" value="Save" />
+    </form>

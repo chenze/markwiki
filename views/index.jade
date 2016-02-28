@@ -1,0 +1,16 @@
+extends layout
+
+block content
+
+  each link in links
+    if link.path != path
+      a(href="#{link.path}") #{link.name}
+      | &nbsp;/&nbsp;
+    else
+       span #{link.name}
+
+  | !{contents}
+  <hr />
+  <div>
+  a(href="#{path}?m=edit") Edit
+  </div>
